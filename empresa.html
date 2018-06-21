@@ -7,14 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Remuner-Ada</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <style>
         /*div{
             border: 1px solid black;
         }*/
-
-        body {
-            background-color: whitesmoke;
-        }
     </style>
 </head>
 
@@ -22,14 +24,17 @@
     <div class="container-fluid bg-dark">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-4">
+                <div class="col">
                     <a href="" style="text-decoration:none;">
                         <h1 class="text-white">Remuner-Ada</h1>
                     </a>
                 </div>
-                <div class="col-4 text-right py-1">
+                <div class="col text-right py-1">
                     <a href="" class="badge badge-pill badge-light">
                         <img src="img/person2.png" class="border rounded-circle"> Usuario
+                    </a>
+                    <a href="" class="badge badge-pill badge-light py-3">
+                        Cerrar sesión
                     </a>
                 </div>
             </div>
@@ -60,7 +65,15 @@
                 </div>
                 <div class="col border-left">
                     <br>
-                    <h3>Empleados</h3>
+                    <div class="row ">
+                        <div class="col-6">
+                            <h3>Empresas</h3>
+                        </div>
+                        <div class="col-6 text-right">
+                            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Añadir empleado</button>
+                        </div>
+                    </div>
+                    <br>
                     <table class="table border">
                         <thead class="thead-dark">
                             <tr>
@@ -119,6 +132,56 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title text-light" id="exampleModalLongTitle">Datos del empleado</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <p class="h5 text-light">Nombre</p>
+                            <input type="text" class="form-control" id="X" placeholder="Ingrese el nombre">
+                        </div>
+                        <div class="form-group">
+                            <p class="h5 text-light">Rut</p>
+                            <input type="text" class="form-control" id="X" placeholder="Ingrese el rut">
+                        </div>
+                        <div class="form-group">
+                            <p class="h5 text-light">Cargo</p>
+                            <input type="text" class="form-control" id="X" placeholder="Ingrese el cargo">
+                        </div>
+                        <div class="form-group">
+                            <p class="h5 text-light">AFP</p>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <p class="h5 text-light">Sueldo base</p>
+                            <input type="text" class="form-control" id="X" placeholder="Ingrese el sueldo base">
+                        </div>
+                        <div class="form-group">
+                            <p class="h5 text-light">Salud</p>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Volver</button>
+                            <button type="button" class="btn btn-light">Guardar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
