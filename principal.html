@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Remuner-Ada</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <style>
         /*div{
             border: 1px solid black;
         }
         */
+
         body {
             background-color: whitesmoke;
         }
     </style>
 </head>
+
 <body>
     <div class="container-fluid bg-dark">
         <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-4 text-center"> <!--Se agrega text-center a todas las paginas-->
+            <div class="row justify-content-between">
+                <div class="col-4">
                     <a href="" style="text-decoration:none;">
-                        <h2 class="text-white">Remuner-Ada</h2>
+                        <h1 class="text-white">Remuner-Ada</h1>
                     </a>
                 </div>
-                <div class="col-4 text-right">
+                <div class="col-4 text-right py-1">
                     <a href="" class="badge badge-pill badge-light">
-                        <img src="img/person2.png" class="border rounded-circle">
-                        Usuario
+                        <img src="img/person2.png" class="border rounded-circle"> Usuario
                     </a>
                 </div>
             </div>
@@ -37,7 +45,14 @@
     <div class="container-fluid">
         <div class="container">
             <br>
-            <h3>Empresas</h3>
+            <div class="row ">
+                <div class="col-6">
+                    <h3>Empresas</h3>
+                </div>
+                <div class="col-4 text-right">
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Añadir empresa</button>
+                </div>
+            </div>
             <br>
             <div class="row">
                 <div class="col-10">
@@ -57,21 +72,27 @@
                                 <td>Mark</td>
                                 <td>Otto</td>
                                 <td>@mdo</td>
-                                <td><a href="#" class="badge badge-light">Administrar</a></td>
+                                <td>
+                                    <a href="#" class="badge badge-light">Administrar</a>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
                                 <td>Jacob</td>
                                 <td>Thornton</td>
                                 <td>@fat</td>
-                                <td><a href="#" class="badge badge-light">Administrar</a></td>
+                                <td>
+                                    <a href="#" class="badge badge-light">Administrar</a>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
                                 <td>Larry</td>
                                 <td>the Bird</td>
                                 <td>@twitter</td>
-                                <td><a href="#" class="badge badge-light">Administrar</a></td>
+                                <td>
+                                    <a href="#" class="badge badge-light">Administrar</a>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -79,5 +100,37 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title text-light" id="exampleModalLongTitle">Datos de la empresa</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <p class="h5 text-light">Nombre</p>
+                            <input type="text" class="form-control" id="X" placeholder="Ingrese el nombre de la empresa">
+                        </div>
+                        <div class="form-group">
+                            <p class="h5 text-light">Rut</p>
+                            <input type="text" class="form-control" id="X" placeholder="Ingrese el rut de la empresa">
+                        </div>
+                        <div class="form-group">
+                            <p class="h5 text-light">Dirección</p>
+                            <input type="text" class="form-control" id="X" placeholder="Ingrese la direccion de la empresa">
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Volver</button>
+                    <button type="button" class="btn btn-light">Guardar</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
