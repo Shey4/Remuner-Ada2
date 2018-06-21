@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+      /*div{
+        border: 1px solid black;
+      }*/
+      body{
+        background-color: #EEEEEE;
+      }
+    </style>
+    <title>Remuner-ADA</title>
+  </head>
+  <body>
+    <div class="container-fluid bg-dark">
+      <div class="container py-2 text-right">
+        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModalCenter">Iniciar sesión</button> <!-- btn-light -->
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="container py-5">
+        <h1 class="display-3">Bienvenido a Remuner-ADA</h1>
+        <p class="lead">Sistema de remuneraciones online, rapido y confiable</p>
+        <button type="button" class="btn btn-dark btn-lg">Registrarse</button> <!--btn-dark Son mas acordes al diseño, que los botones azules-->
+      </div>
+    </div>
+    <hr>
+    <div class="container-fluid">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-7">
+            <h1 class="display-3">¿No te convence?</h1>
+            <p class="lead">Hecha un vistazo a Remuner-ADA</p>
+          </div>
+          <div class="col-5">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Y7aEiVwBAdk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Iniciar sesión</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label>Correo</label>
+                <input type="email" class="form-control" id="X" aria-describedby="emailHelp" placeholder="Ingrese su correo">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Contraseña</label>
+                <input type="password" class="form-control" id="Z" placeholder="Ingrese su contraseña">
+              </div>
+              <div class="alert alert-danger" role="alert">
+                This is a danger alert—check it out!
+              </div>
+              <!-- SI QUIERES LO BORRAS -->
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Entrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
