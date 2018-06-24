@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Liquidaciones</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        /*div{
+              border: 1px solid black;
+            }
+        */
+
+        body {
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-dark">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-4">
+                    <a href="" style="text-decoration:none;">
+                        <h2 class="text-white">Remuner-Ada</h2>
+                    </a>
+                </div>
+                <div class="col-4 text-right">
+                    <a href="" class="badge badge-pill badge-light">
+                        <img src="img/person2.png" class="border rounded-circle"> Usuario
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-2">
+        <h3>Liquidaciones</h3>
+    </div>
+    <div class="container-fluid py-2" style="overflow-x: scroll;">
+        <table class="table border" style="width: 3000px;">
+            <thead class="thead-dark">
+                <tr class="text-center">
+                    <th colspan="5" class="border-right">Datos del trabajador</th>
+                    <th colspan="5" class="border-right">Imponible</th>
+                    <th colspan="4" class="border-right">Haberes</th>
+                    <th colspan="6" class="border-right">Leyes sociales</th>
+                    <th colspan="2" class="border-right">Otros descuentos</th>
+                    <th colspan="1"></th>
+                </tr>
+                <tr>
+                    <th class="border-right">#</th>
+                    <th class="border-right">Rut</th>
+                    <th class="border-right">Nombre</th>
+                    <th class="border-right">Dias trabajados</th>
+                    <th class="border-right">Hrs. extras</th>
+                    <th class="border-right">Sueldo base</th>
+                    <th class="border-right">Hrs. extras a pagar</th>
+                    <th class="border-right">Bonos</th>
+                    <th class="border-right">Gratificación</th>
+                    <th class="border-right">Total imponible</th>
+                    <th class="border-right">Colacion</th>
+                    <th class="border-right">Movilizacion</th>
+                    <th class="border-right">Carga familiar</th>
+                    <th class="border-right">Total haberes</th>
+                    <th class="border-right">AFP</th>
+                    <th class="border-right">Seg. cesantia</th>
+                    <th class="border-right">Fonasa/Isapre</th>
+                    <th class="border-right">Seguros trabajo y Inva</th>
+                    <th class="border-right">Base tributable</th>
+                    <th class="border-right">Impuesto a pagar</th>
+                    <th class="border-right">Anticipos</th>
+                    <th class="border-right">Total descuentos</th>
+                    <th>Liquido a pagar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                        <th scope="row">1</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>(sueldo base * 0.0077777) * hrs extras</td>
+                        <td>Se suman no mas</td>
+                        <td><p>(Suelso Base + Horas Extras +Bonos)*0,25</p>Tope previred</td>
+                        <!-- Se calcula el sueldo minimo de diciembre (264000) * 4.75 / 12 = 104.500
+                        Si supera ese monto, se coloca ese monto
+                        Segun una pagina, el sueldo que llega a ese monto es 418.000, si supera eso, se coloca el tope-->
+                        <td>Sueldo base + hrs extras+ bonos + Gratificación</td>
+                        <td>Manual</td>
+                        <td>Manual</td>
+                        <td>Tabla asig familiar en previred</td> <!--Si esta entre los montos, se paga eso por hijo
+                        Si supera los 659.743 de imponible, no se paga.-->
+                        <td>Se suma todo</td>
+                        <td>Total imponible*tasaAFP</td> <!--Tiene tope, sale en previ red en la tabla "renta tope imponible"-->
+                        <td>Imponible * 0.6%</td>
+                        <td>Imponible * 7%</td> <!--Fonasa por ahora es eso. Isapre lo estoy investigando-->
+                        <td>Investigando</td>
+                        <td>La suma de todas las leyes, restado al imponible</td>
+                        <td>Imponible * factor - rebaja</td> <!--En este caso no aplica-->
+                        <td>Manual</td>
+                        <td>La suma de todos los descuentos</td>
+                        <td>Total haberes - total descuentos</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>19.932.661-9</td>
+                    <td>Sebastian Benito Chamorro Riquelme</td>
+                    <td>30</td>
+                    <td>5</td>
+                    <td>300.000</td>
+                    <td>11.667</td>
+                    <td>10.000</td>
+                    <td>80.416</td>
+                    <td>402.093</td>
+                    <td>10.000</td>
+                    <td>10.000</td>
+                    <td>0</td>
+                    <td>422.093</td>
+                    <td>45.999</td>
+                    <td>2.412</td>
+                    <td>28.146</td>
+                    <td>0</td>
+                    <td>325.536</td>
+                    <td>0</td>
+                    <td>50.000</td>
+                    <td>126.557</td>
+                    <td>295.536</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
