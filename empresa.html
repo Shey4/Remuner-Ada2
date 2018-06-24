@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Remuner-Ada</title>
+    <title>Empresa</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -43,7 +43,7 @@
     <div class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-5">
                     <br>
                     <h3>Datos de la empresa</h3>
                     <div class="form-group">
@@ -81,23 +81,20 @@
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Apellido</th>
                                 <th scope="col">Rut</th>
-                                <th scope="col">Cargo</th>
-                                <th scope="col"></th>
+                                <th scope="col">Contrato</th>
                                 <th scope="col"></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Mark</td>
-                                <td>Otto</td>
+                                <td>Sebatian Benito</td>
+                                <td>Chamorro Riquelme</td>
+                                <td>19.932.661-9</td>
                                 <td>@mdo</td>
                                 <td>
-                                    <a href="#" class="badge badge-light" class="btn btn-dark" data-toggle="modal" data-target="#edit">Editar</a>
-                                </td>
-                                <td>
                                     <a href="#" class="badge badge-light" class="btn btn-dark">Liquidación</a>
+                                    <a href="#" class="badge badge-light" class="btn btn-dark">Borrar</a>
                                 </td>
                             </tr>
                             <tr>
@@ -107,10 +104,8 @@
                                 <td>Thornton</td>
                                 <td>@fat</td>
                                 <td>
-                                    <a href="#" class="badge badge-light" data-toggle="modal" data-target="#edit">Editar</a>
-                                </td>
-                                <td>
                                     <a href="#" class="badge badge-light" class="btn btn-dark">Liquidación</a>
+                                    <a href="#" class="badge badge-light" class="btn btn-dark">Borrar</a>
                                 </td>
                             </tr>
                             <tr>
@@ -120,10 +115,8 @@
                                 <td>the Bird</td>
                                 <td>@twitter</td>
                                 <td>
-                                    <a href="#" class="badge badge-light" data-toggle="modal" data-target="#edit">Editar</a>
-                                </td>
-                                <td>
                                     <a href="#" class="badge badge-light" class="btn btn-dark">Liquidación</a>
+                                    <a href="#" class="badge badge-light" class="btn btn-dark">Borrar</a>
                                 </td>
                             </tr>
                             <tr>
@@ -133,10 +126,8 @@
                                 <td>The pute fat</td>
                                 <td>@instagram</td>
                                 <td>
-                                    <a href="#" class="badge badge-light" data-toggle="modal" data-target="#edit">Editar</a>
-                                </td>
-                                <td>
                                     <a href="#" class="badge badge-light" class="btn btn-dark">Liquidación</a>
+                                    <a href="#" class="badge badge-light" class="btn btn-dark">Borrar</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -164,28 +155,8 @@
                             <input type="text" class="form-control" id="X" placeholder="Ingrese el rut">
                         </div>
                         <div class="form-group">
-                            <p class="h5 text-light">Cargo</p>
+                            <p class="h5 text-light">Contrato</p>
                             <input type="text" class="form-control" id="X" placeholder="Ingrese el cargo">
-                        </div>
-                        <div class="form-group">
-                            <p class="h5 text-light">AFP</p>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <p class="h5 text-light">Sueldo base</p>
-                            <input type="text" class="form-control" id="X" placeholder="Ingrese el sueldo base">
-                        </div>
-                        <div class="form-group">
-                            <p class="h5 text-light">Salud</p>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Volver</button>
@@ -196,57 +167,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Modal edit-->
-    <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content bg-dark">
-                    <div class="modal-header">
-                        <h5 class="modal-title text-light" id="exampleModalLongTitle">Editar empleado</h5>
-                    </div>
-                    <div class="modal-body">
-                        <form action="">
-                            <div class="form-group">
-                                <p class="h5 text-light">Nombre</p>
-                                <input type="text" class="form-control" id="X" placeholder="Ingrese el nombre">
-                            </div>
-                            <div class="form-group">
-                                <p class="h5 text-light">Rut</p>
-                                <input type="text" class="form-control" id="X" placeholder="Ingrese el rut">
-                            </div>
-                            <div class="form-group">
-                                <p class="h5 text-light">Cargo</p>
-                                <input type="text" class="form-control" id="X" placeholder="Ingrese el cargo">
-                            </div>
-                            <div class="form-group">
-                                <p class="h5 text-light">AFP</p>
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <p class="h5 text-light">Sueldo base</p>
-                                <input type="text" class="form-control" id="X" placeholder="Ingrese el sueldo base">
-                            </div>
-                            <div class="form-group">
-                                <p class="h5 text-light">Salud</p>
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                </select>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Volver</button>
-                                <button type="button" class="btn btn-light">Guardar</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
 </body>
 
 </html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Datos para liquidación</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        /*div{
+              border: 1px solid black;
+            }
+        */
+
+        body {
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-dark">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-4">
+                    <a href="" style="text-decoration:none;">
+                        <h2 class="text-white">Remuner-Ada</h2>
+                    </a>
+                </div>
+                <div class="col-4 text-right">
+                    <a href="" class="badge badge-pill badge-light">
+                        <img src="img/person2.png" class="border rounded-circle"> Usuario
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container py-2">
+            <h3>Datos para la liquidacion</h3>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <h4>Imponibles</h4>
+                    <div class="form-group">
+                        <p class="h5">Sueldo base</p>
+                        <input type="text" class="form-control" id="X" placeholder="Sueldo base">
+                        <!--No puede ser menor al minimo establecido-->
+                    </div>
+                    <div class="form-group">
+                        <p class="h5">Horas extras</p>
+                        <input type="text" class="form-control" id="X" placeholder="Horas extras">
+                    </div>
+                </div>
+                <div class="col border-left">
+                    <h4>Haberes</h4>
+                    <div class="form-group">
+                        <p class="h5">Colación</p>
+                        <input type="text" class="form-control" id="X" placeholder="Colación">
+                    </div>
+                    <div class="form-group">
+                        <p class="h5">Movilización</p>
+                        <input type="text" class="form-control" id="X" placeholder="Movilización">
+                    </div>
+                    <div class="form-group">
+                        <p class="h5">Asignación familiar</p>
+                        <input type="text" class="form-control" id="X" placeholder="Cantidad de hijos">
+                    </div>
+                </div>
+                <div class="col border-left">
+                    <h4>Leyes sociales</h4>
+                    <div class="form-group">
+                        <p class="h5">AFP</p>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <p class="h5">Fonasa/Isapre</p>
+                        <input type="text" class="form-control" id="X" placeholder="Salud">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-4" style="height: 300px;">
+                    <h4>Otros descuentos</h4>
+                    <div class="form-group">
+                        <p class="h5">Anticipo</p>
+                        <input type="text" class="form-control" id="X" placeholder="Anticipo">
+                    </div>
+                </div>
+                <div class="col border-left">
+                    <p class="h5">Bonos</p>
+                    <div class="form-group">
+                        <!--Cada vez que apreta el boton mas, se agrega un nuevo bono
+                            que es desde el div "row" hasta el "br"-->
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" id="X" placeholder="Nombre">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="X" placeholder="Cantidad">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" id="X" placeholder="Nombre">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="X" placeholder="Cantidad">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group text-right">
+                        <button type="button" class="btn btn-dark">Agregar</button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="form-group text-right">
+                <button type="button" class="btn btn-outline-dark">Volver</button>
+                <button type="button" class="btn btn-dark">Guardar</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
